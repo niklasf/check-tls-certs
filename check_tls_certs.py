@@ -198,7 +198,7 @@ def check(domainnames_certs, utcnow, expiry_warn=default_expiry_warn):
         else:
             unmatched = alt_names.difference(domainnames)
             msgs.append(
-                ('warning', "More alternate names than specified %s." % ', '.join(
+                ('info', "More alternate names than specified %s." % ', '.join(
                     sorted(unmatched, key=domain_key))))
     return (msgs, earliest_expiration)
 
