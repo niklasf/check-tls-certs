@@ -329,3 +329,7 @@ def main(file, domain, expiry_warn, verbose):
         sys.exit(3)
     if verbose:
         click.echo(click.style(msg, fg="green"))
+
+
+if __name__ == "__main__":
+    main()
